@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<!-- 定义 -->
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginoutServlet</servlet-name>
+    <servlet-class>com.servlet.LoginoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectMobileServlet</servlet-name>
+    <servlet-class>com.servlet.SelectMobileServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AllPackageServlet</servlet-name>
+    <servlet-class>com.servlet.AllPackageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PayMobileServlet</servlet-name>
+    <servlet-class>com.servlet.PayMobileServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OnlineRechargeServlet</servlet-name>
+    <servlet-class>com.servlet.OnlineRechargeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CardRechargeServlet</servlet-name>
+    <servlet-class>com.servlet.CardRechargeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RechargeInforServlet</servlet-name>
+    <servlet-class>com.servlet.RechargeInforServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QueryBusinessServlet</servlet-name>
+    <servlet-class>com.servlet.QueryBusinessServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ManagerBusinessServlet</servlet-name>
+    <servlet-class>com.servlet.ManagerBusinessServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ManagerPackageServlet</servlet-name>
+    <servlet-class>com.servlet.ManagerPackageServlet</servlet-class>
+  </servlet>
+  <filter>
+  <filter-name>loginFilter</filter-name>
+  <filter-class>com.filter.LoginFilter</filter-class>
+  </filter>
+
+
+
+<!-- 映射 -->
+	<filter-mapping>
+	<filter-name>loginFilter</filter-name>
+	<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/servlet/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginoutServlet</servlet-name>
+    <url-pattern>/servlet/LoginoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectMobileServlet</servlet-name>
+    <url-pattern>/servlet/SelectMobileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AllPackageServlet</servlet-name>
+    <url-pattern>/servlet/AllPackageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PayMobileServlet</servlet-name>
+    <url-pattern>/servlet/PayMobileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OnlineRechargeServlet</servlet-name>
+    <url-pattern>/servlet/OnlineRechargeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CardRechargeServlet</servlet-name>
+    <url-pattern>/servlet/CardRechargeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RechargeInforServlet</servlet-name>
+    <url-pattern>/servlet/RechargeInforServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryBusinessServlet</servlet-name>
+    <url-pattern>/servlet/QueryBusinessServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManagerBusinessServlet</servlet-name>
+    <url-pattern>/servlet/ManagerBusinessServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManagerPackageServlet</servlet-name>
+    <url-pattern>/servlet/ManagerPackageServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
